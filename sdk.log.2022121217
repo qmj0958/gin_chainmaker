@@ -1,0 +1,6 @@
+2022-12-12 17:02:14.460	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 17:02:14.461	[DEBUG]	[SDK]	contract/get.go:46	[SDK] begin to QUERY contract, [contractName:claim002]/[method:find_by_file_hash]/[params:[key:"file_hash" value:"d5224d3b7c1f435f911a6d2a1dc6c963" ]]
+2022-12-12 17:02:14.814	[DEBUG]	[SDK]	v2@v2.3.1/sdk_client.go:260	[SDK] proposalRequest resp: message:"SUCCESS" contract_result:<result:"{\"file_hash\":\"d5224d3b7c1f435f911a6d2a1dc6c963\",\"file_name\":\"file_1670418454\",\"time\":1670418454}" gas_used:378206 > tx_id:"1730003f7e9df1b2ca2125dbf10b98dc9ec3535a746e4a6bbbab751b6b6353ee" 
+2022-12-12 17:02:51.155	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 17:02:51.155	[DEBUG]	[SDK]	contract/get.go:46	[SDK] begin to QUERY contract, [contractName:claim002]/[method:find_by_file_hash]/[params:[key:"file_hash" value:"d5224d3b7c1f435f911a6d2a1dc6c963" ]]
+2022-12-12 17:02:51.475	[DEBUG]	[SDK]	v2@v2.3.1/sdk_client.go:260	[SDK] proposalRequest resp: message:"SUCCESS" contract_result:<result:"{\"file_hash\":\"d5224d3b7c1f435f911a6d2a1dc6c963\",\"file_name\":\"file_1670418454\",\"time\":1670418454}" gas_used:378206 > tx_id:"1730004809bee401ca2d72c0c243860ec7ebd8a2d5df4565b7382ba33f99aea8" 

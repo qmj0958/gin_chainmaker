@@ -1,0 +1,12 @@
+2022-12-18 18:01:42.295	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-18 18:01:42.295	[DEBUG]	[SDK]	contract/get.go:46	[SDK] begin to QUERY contract, [contractName:claim002]/[method:find_by_file_hash]/[params:[key:"file_hash" value:"d5224d3b7c1f435f911a6d2a1dc6c963" ]]
+2022-12-18 18:01:42.647	[DEBUG]	[SDK]	v2@v2.3.1/sdk_client.go:260	[SDK] proposalRequest resp: message:"SUCCESS" contract_result:<result:"{\"file_hash\":\"d5224d3b7c1f435f911a6d2a1dc6c963\",\"file_name\":\"file_1670418454\",\"time\":1670418454}" gas_used:378206 > tx_id:"1731daf999f3f73dca927426746e261989a13d413009403880b952f970eef466" 
+2022-12-18 18:01:45.440	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-18 18:01:45.441	[DEBUG]	[SDK]	contract/get.go:46	[SDK] begin to QUERY contract, [contractName:claim002]/[method:find_by_file_hash]/[params:[key:"file_hash" value:"d5224d3b7c1f435f911a6d2a1dc6c963" ]]
+2022-12-18 18:01:45.738	[DEBUG]	[SDK]	v2@v2.3.1/sdk_client.go:260	[SDK] proposalRequest resp: message:"SUCCESS" contract_result:<result:"{\"file_hash\":\"d5224d3b7c1f435f911a6d2a1dc6c963\",\"file_name\":\"file_1670418454\",\"time\":1670418454}" gas_used:378206 > tx_id:"1731dafa557697aaca70d41339f162857137806b97a14b9988613a52941639bc" 
+2022-12-18 18:02:35.868	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-18 18:02:35.868	[DEBUG]	[SDK]	contract/get.go:46	[SDK] begin to QUERY contract, [contractName:claim002]/[method:find_by_file_hash]/[params:[key:"file_hash" value:"d5224d3b7c1f435f911a6d2a1dc6c963" ]]
+2022-12-18 18:02:36.145	[DEBUG]	[SDK]	v2@v2.3.1/sdk_client.go:260	[SDK] proposalRequest resp: message:"SUCCESS" contract_result:<result:"{\"file_hash\":\"d5224d3b7c1f435f911a6d2a1dc6c963\",\"file_name\":\"file_1670418454\",\"time\":1670418454}" gas_used:378206 > tx_id:"1731db0613284d1fca5efd53becdcdbbc27dc57c88c2486d9da12fbba44b27db" 
+2022-12-18 18:02:38.158	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-18 18:02:38.158	[DEBUG]	[SDK]	contract/get.go:46	[SDK] begin to QUERY contract, [contractName:claim002]/[method:find_by_file_hash]/[params:[key:"file_hash" value:"d5224d3b7c1f435f911a6d2a1dc6c963" ]]
+2022-12-18 18:02:38.480	[DEBUG]	[SDK]	v2@v2.3.1/sdk_client.go:260	[SDK] proposalRequest resp: message:"SUCCESS" contract_result:<result:"{\"file_hash\":\"d5224d3b7c1f435f911a6d2a1dc6c963\",\"file_name\":\"file_1670418454\",\"time\":1670418454}" gas_used:378206 > tx_id:"1731db069ba4bf3bcaa0a5d693802b5d6f097fe49765430f8cb4fbe256ef9434" 

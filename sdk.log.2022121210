@@ -1,0 +1,39 @@
+2022-12-12 10:33:50.323	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 10:33:50.324	[DEBUG]	[SDK]	gin_chainmaker/main.go:39	[SDK] begin to send check new block chain config command
+2022-12-12 10:33:52.471	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 10:33:52.472	[DEBUG]	[SDK]	gin_chainmaker/main.go:39	[SDK] begin to send check new block chain config command
+2022-12-12 10:33:55.415	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 10:33:55.415	[DEBUG]	[SDK]	gin_chainmaker/main.go:72	[SDK] begin to QUERY contract, [contractName:claim002]/[method:find_by_file_hash]/[params:[key:"file_hash" ]]
+2022-12-12 10:33:55.771	[DEBUG]	[SDK]	v2@v2.3.1/sdk_client.go:260	[SDK] proposalRequest resp: message:"SUCCESS" contract_result:<gas_used:93373 > tx_id:"172feb0ec341bf19ca7d23a9ad602b2ca2dbfc50f8a0427ebfb96a77395c8771" 
+2022-12-12 10:39:08.719	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 10:39:08.721	[DEBUG]	[SDK]	gin_chainmaker/main.go:72	[SDK] begin to QUERY contract, [contractName:claim002]/[method:find_by_file_hash]/[params:[key:"file_hash" ]]
+2022-12-12 10:39:09.018	[DEBUG]	[SDK]	v2@v2.3.1/sdk_client.go:260	[SDK] proposalRequest resp: message:"SUCCESS" contract_result:<gas_used:94810 > tx_id:"172feb57b5bcc576ca77d20588535d85aa05fece554742ed97e329aefa6c3595" 
+2022-12-12 10:39:10.659	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 10:39:10.659	[DEBUG]	[SDK]	gin_chainmaker/main.go:39	[SDK] begin to send check new block chain config command
+2022-12-12 10:39:11.386	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 10:39:11.387	[DEBUG]	[SDK]	gin_chainmaker/main.go:39	[SDK] begin to send check new block chain config command
+2022-12-12 10:39:12.038	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 10:39:12.038	[DEBUG]	[SDK]	gin_chainmaker/main.go:39	[SDK] begin to send check new block chain config command
+2022-12-12 10:39:12.777	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 10:39:12.777	[DEBUG]	[SDK]	gin_chainmaker/main.go:39	[SDK] begin to send check new block chain config command
+2022-12-12 10:39:13.598	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 10:39:13.598	[DEBUG]	[SDK]	gin_chainmaker/main.go:39	[SDK] begin to send check new block chain config command
+2022-12-12 10:48:08.315	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 10:48:08.316	[DEBUG]	[SDK]	chain/testChain.go:23	[SDK] begin to send check new block chain config command
+2022-12-12 10:48:10.732	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 10:48:10.732	[DEBUG]	[SDK]	chain/testChain.go:23	[SDK] begin to send check new block chain config command
+2022-12-12 10:48:13.395	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 10:48:13.396	[DEBUG]	[SDK]	gin_chainmaker/main.go:58	[SDK] begin to QUERY contract, [contractName:claim002]/[method:find_by_file_hash]/[params:[key:"file_hash" ]]
+2022-12-12 10:48:13.696	[DEBUG]	[SDK]	v2@v2.3.1/sdk_client.go:260	[SDK] proposalRequest resp: message:"SUCCESS" contract_result:<gas_used:93373 > tx_id:"172febd686e260becad64b8e6fa9e15d0f115161b459451ba07913e87140f4fc" 
+2022-12-12 10:50:52.543	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 10:50:52.547	[DEBUG]	[SDK]	gin_chainmaker/main.go:58	[SDK] begin to QUERY contract, [contractName:claim002]/[method:find_by_file_hash]/[params:[key:"file_hash" value:"d5224d3b7c1f435f911a6d2a1dc6c963" ]]
+2022-12-12 10:50:52.844	[DEBUG]	[SDK]	v2@v2.3.1/sdk_client.go:260	[SDK] proposalRequest resp: message:"SUCCESS" contract_result:<result:"{\"file_hash\":\"d5224d3b7c1f435f911a6d2a1dc6c963\",\"file_name\":\"file_1670418454\",\"time\":1670418454}" gas_used:378047 > tx_id:"172febfb950fbdc7cad7dc798ba77e6a52a262d932da4bc48077bf211ecbc00c" 
+2022-12-12 10:53:20.351	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 10:53:20.353	[DEBUG]	[SDK]	gin_chainmaker/main.go:58	[SDK] begin to QUERY contract, [contractName:claim002]/[method:find_by_file_hash]/[params:[key:"file_hash" value:"d5224d3b7c1f435f911a6d2a1dc6c963" ]]
+2022-12-12 10:53:20.637	[DEBUG]	[SDK]	v2@v2.3.1/sdk_client.go:260	[SDK] proposalRequest resp: message:"SUCCESS" contract_result:<result:"{\"file_hash\":\"d5224d3b7c1f435f911a6d2a1dc6c963\",\"file_name\":\"file_1670418454\",\"time\":1670418454}" gas_used:379494 > tx_id:"172fec1dfefc22adca0970400b40117fa962ffa1e3f2477facb9c628f46cc853" 
+2022-12-12 10:53:21.474	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 10:53:21.474	[DEBUG]	[SDK]	gin_chainmaker/main.go:58	[SDK] begin to QUERY contract, [contractName:claim002]/[method:find_by_file_hash]/[params:[key:"file_hash" value:"d5224d3b7c1f435f911a6d2a1dc6c963" ]]
+2022-12-12 10:53:21.700	[DEBUG]	[SDK]	v2@v2.3.1/sdk_client.go:260	[SDK] proposalRequest resp: message:"SUCCESS" contract_result:<result:"{\"file_hash\":\"d5224d3b7c1f435f911a6d2a1dc6c963\",\"file_name\":\"file_1670418454\",\"time\":1670418454}" gas_used:379494 > tx_id:"172fec1e41ca52deca8b7c749484da03d8869cff509c442aa25ba60fa280afcb" 
+2022-12-12 10:53:22.465	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 10:53:22.466	[DEBUG]	[SDK]	gin_chainmaker/main.go:58	[SDK] begin to QUERY contract, [contractName:claim002]/[method:find_by_file_hash]/[params:[key:"file_hash" value:"d5224d3b7c1f435f911a6d2a1dc6c963" ]]
+2022-12-12 10:53:22.790	[DEBUG]	[SDK]	v2@v2.3.1/sdk_client.go:260	[SDK] proposalRequest resp: message:"SUCCESS" contract_result:<result:"{\"file_hash\":\"d5224d3b7c1f435f911a6d2a1dc6c963\",\"file_name\":\"file_1670418454\",\"time\":1670418454}" gas_used:379494 > tx_id:"172fec1e7ce5ad47ca29b92ef120e48082ae3aff951d4e2db6c87fc472f8371c" 

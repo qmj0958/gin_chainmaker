@@ -1,0 +1,15 @@
+2022-12-12 09:36:36.779	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 09:36:36.780	[DEBUG]	[SDK]	gin_chainmaker/main.go:39	[SDK] begin to send check new block chain config command
+2022-12-12 09:36:39.387	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 09:36:39.388	[DEBUG]	[SDK]	gin_chainmaker/main.go:39	[SDK] begin to send check new block chain config command
+2022-12-12 09:36:48.307	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 09:36:48.308	[DEBUG]	[SDK]	gin_chainmaker/main.go:72	[SDK] begin to QUERY contract, [contractName:claim002]/[method:find_by_file_hash]/[params:[key:"file_hash" ]]
+2022-12-12 09:36:48.600	[DEBUG]	[SDK]	v2@v2.3.1/sdk_client.go:260	[SDK] proposalRequest resp: message:"SUCCESS" contract_result:<gas_used:94810 > tx_id:"172fe7f0d3bbec62ca6455dfe50d64b48e1c69c70eac427f834051d438629ce8" 
+2022-12-12 09:36:49.859	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 09:36:49.860	[DEBUG]	[SDK]	gin_chainmaker/main.go:72	[SDK] begin to QUERY contract, [contractName:claim002]/[method:find_by_file_hash]/[params:[key:"file_hash" value:"d5224d3b7c1f435f911a6d2a1dc6c963" ]]
+2022-12-12 09:36:50.152	[DEBUG]	[SDK]	v2@v2.3.1/sdk_client.go:260	[SDK] proposalRequest resp: message:"SUCCESS" contract_result:<result:"{\"file_hash\":\"d5224d3b7c1f435f911a6d2a1dc6c963\",\"file_name\":\"file_1670418454\",\"time\":1670418454}" gas_used:378047 > tx_id:"172fe7f1303cfe25ca2388abf55437fbe247303b2ae74ac58e9380dbf38adf32" 
+2022-12-12 09:37:32.396	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 09:37:32.398	[DEBUG]	[SDK]	gin_chainmaker/main.go:72	[SDK] begin to QUERY contract, [contractName:claim002]/[method:find_by_file_hash]/[params:[key:"file_hash" ]]
+2022-12-12 09:37:32.750	[DEBUG]	[SDK]	v2@v2.3.1/sdk_client.go:260	[SDK] proposalRequest resp: message:"SUCCESS" contract_result:<gas_used:94810 > tx_id:"172fe7fb17b2eab3ca13c48b9f54819ec08be2981f094148a45e6ae8f1a97ec8" 
+2022-12-12 09:37:34.523	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
+2022-12-12 09:37:34.524	[DEBUG]	[SDK]	gin_chainmaker/main.go:39	[SDK] begin to send check new block chain config command
