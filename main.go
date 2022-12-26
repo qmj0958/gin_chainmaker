@@ -18,11 +18,11 @@ import (
 )
 
 const (
-	createContractTimeout = 5
+	// createContractTimeout = 5
 	//claimContractName     = "claim002" //合约名称ddd
-	claimContractName = "saleStock001" //合约名称
+	// claimContractName = "saleStock002" //合约名称
 	//claimVersion      = "2.0.0"
-	claimVersion = "1.0"
+	// claimVersion = "1.0"
 	//claimByteCodePath     = "./chainmaker_config/claim-wasm-demo/rust-fact-2.0.0.wasm"
 
 	sdkConfigOrg1Client1Path = "./chainmaker_config/sdk_configs/sdk_config_org1_client1.yml"
@@ -83,14 +83,17 @@ func main() {
 		//getContractResultMap = JsonstringToMap(getContractResultString)
 		//context.JSON(http.StatusOK, getContractResultMap)
 		context.JSON(http.StatusOK, gin.H{
-			"hash":    getContractResult[0],
-			"goodsId": getContractResult[1],
-			"style":   getContractResult[2],
-			"weight":  getContractResult[3],
-			"pichash": getContractResult[4],
-			"price":   getContractResult[5],
-			"shifu":   getContractResult[6],
-			"time":    getContractResult[7],
+			"hash":           getContractResult[0],
+			"factory":        getContractResult[1],
+			"style":          getContractResult[2],
+			"weight":         getContractResult[3],
+			"logo":           getContractResult[4],
+			"silver_content": getContractResult[5],
+			"cert_id":        getContractResult[6],
+			"cert_img":       getContractResult[7],
+			"check_img":      getContractResult[8],
+			"factory_add":    getContractResult[9],
+			"time":           getContractResult[10],
 		})
 	})
 

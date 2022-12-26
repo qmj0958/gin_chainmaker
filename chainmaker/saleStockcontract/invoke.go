@@ -48,7 +48,7 @@ func SaleStockEVMSet(client *sdk.ChainClient, method string, m map[string]interf
 	//
 	fmt.Println("====================== 1 ======================")
 	// dataByte, err := myAbi.Pack(method, data3)
-	dataByte, err := myAbi.Pack(method, m["hash"], m["goodsId"], m["style"], m["weight"], m["pichash"], m["price"], m["shifu"])
+	dataByte, err := myAbi.Pack(method, m["hash"], m["factory"], m["style"], m["weight"], m["logo"], m["silver_content"], m["cert_id"], m["cert_img"], m["check_img"], m["factory_add"])
 	if err != nil {
 		log.Fatalln(err)
 	}
