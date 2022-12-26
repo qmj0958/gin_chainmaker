@@ -19,7 +19,7 @@ import (
 
 const (
 	createContractTimeout = 5
-	//claimContractName     = "claim002" //合约名称
+	//claimContractName     = "claim002" //合约名称ddd
 	claimContractName = "saleStock001" //合约名称
 	//claimVersion      = "2.0.0"
 	claimVersion = "1.0"
