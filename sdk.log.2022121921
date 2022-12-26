@@ -1,9 +1,0 @@
-2022-12-19 21:04:30.046	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
-2022-12-19 21:04:30.049	[DEBUG]	[SDK]	contract/get.go:46	[SDK] begin to QUERY contract, [contractName:claim002]/[method:find_by_file_hash]/[params:[key:"file_hash" value:"19f2076a3a444eb4b0ad6a4432cdcc01" ]]
-2022-12-19 21:04:30.425	[DEBUG]	[SDK]	v2@v2.3.1/sdk_client.go:260	[SDK] proposalRequest resp: message:"SUCCESS" contract_result:<result:"{\"file_hash\":\"19f2076a3a444eb4b0ad6a4432cdcc01\",\"file_name\":\"file_1671451217\",\"time\":1671451217}" gas_used:378254 > tx_id:"17323387cc4f52e0ca9ab30df08c7d4f1e66cd7ed2c543e29570abd4d042b761" 
-2022-12-19 21:04:59.555	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
-2022-12-19 21:04:59.556	[DEBUG]	[SDK]	contract/get.go:46	[SDK] begin to QUERY contract, [contractName:claim002]/[method:find_by_file_hash]/[params:[key:"file_hash" value:"19f2076a3a444eb4b0ad6a4432cdcc01" ]]
-2022-12-19 21:04:59.895	[DEBUG]	[SDK]	v2@v2.3.1/sdk_client.go:260	[SDK] proposalRequest resp: message:"SUCCESS" contract_result:<result:"{\"file_hash\":\"19f2076a3a444eb4b0ad6a4432cdcc01\",\"file_name\":\"file_1671451217\",\"time\":1671451217}" gas_used:378254 > tx_id:"1732338eab167f49ca71db7084ceb43217cb40f1b1934056be0902a0f2847ed3" 
-2022-12-19 21:09:39.828	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
-2022-12-19 21:09:39.830	[DEBUG]	[SDK]	contract/get.go:46	[SDK] begin to QUERY contract, [contractName:claim002]/[method:find_by_file_hash]/[params:[key:"file_hash" value:"19f2076a3a444eb4b0ad6a4432cdcc01" ]]
-2022-12-19 21:09:40.188	[DEBUG]	[SDK]	v2@v2.3.1/sdk_client.go:260	[SDK] proposalRequest resp: message:"SUCCESS" contract_result:<result:"{\"file_hash\":\"19f2076a3a444eb4b0ad6a4432cdcc01\",\"file_name\":\"file_1671451217\",\"time\":1671451217}" gas_used:378254 > tx_id:"173233cfecb7825ecad1723346f2bbf65eb3a9b1603e4bd48167d6372c678c48" 
