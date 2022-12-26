@@ -1,3 +1,0 @@
-2022-12-23 09:50:47.346	[DEBUG]	[SDK]	v2@v2.3.1/sdk_config.go:914	[SDK] use tls
-2022-12-23 09:50:47.352	[DEBUG]	[SDK]	contract/get.go:46	[SDK] begin to QUERY contract, [contractName:claim002]/[method:find_by_file_hash]/[params:[key:"file_hash" value:"19f2076a3a444eb4b0ad6a4432cdcc01" ]]
-2022-12-23 09:50:47.719	[DEBUG]	[SDK]	v2@v2.3.1/sdk_client.go:260	[SDK] proposalRequest resp: message:"SUCCESS" contract_result:<result:"{\"file_hash\":\"19f2076a3a444eb4b0ad6a4432cdcc01\",\"file_name\":\"file_1671451217\",\"time\":1671451217}" gas_used:379053 > tx_id:"173349166d183b0aca097017143d48ab2984f83e88b5461a8949c76f7c403ef7" 
