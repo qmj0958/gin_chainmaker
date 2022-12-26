@@ -6,7 +6,7 @@ require (
 	chainmaker.org/chainmaker/common/v2 v2.3.0
 	chainmaker.org/chainmaker/pb-go/v2 v2.3.1
 	chainmaker.org/chainmaker/sdk-go/v2 v2.3.1
-	github.com/gin-gonic/gin v1.8.1
+	github.com/gin-gonic/gin v1.8.2
 )
 
 require (
@@ -19,6 +19,7 @@ require (
 	github.com/dgryski/go-metro v0.0.0-20200812162917-85c65e2d0165 // indirect
 	github.com/fatih/color v1.10.0 // indirect
 	github.com/fsnotify/fsnotify v1.5.1 // indirect
+	github.com/gin-contrib/cors v1.4.0 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/go-kit/kit v0.10.0 // indirect
 	github.com/go-logfmt/logfmt v0.5.0 // indirect

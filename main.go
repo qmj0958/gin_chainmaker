@@ -14,6 +14,7 @@ import (
 	"github.com/gin-gonic/gin"
 
 	"chainmaker.org/chainmaker/pb-go/v2/common"
+	"github.com/gin-contrib/cors"
 )
 
 const (
@@ -54,6 +55,7 @@ func main() {
 	}
 	//创建一个服务
 	r := gin.Default()
+	r.Use(cors.Default())
 
 	//检查这条长安链是否运行正常
 	r.GET("/contact/testChainClient", func(context *gin.Context) {
