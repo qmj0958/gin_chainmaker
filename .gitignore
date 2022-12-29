@@ -16,3 +16,5 @@ sdk.log.*
 
 # Go workspace file
 go.work
+gin_chainmaker
+sdk.log
