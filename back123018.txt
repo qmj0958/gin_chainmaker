@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"gin_chainmaker/chainmaker/chain"
 	"gin_chainmaker/chainmaker/saleStockcontract"
-	"path"
 
 	"log"
 	"net/http"
@@ -19,6 +18,13 @@ import (
 )
 
 const (
+	// createContractTimeout = 5
+	//claimContractName     = "claim002" //合约名称ddd
+	// claimContractName = "saleStock002" //合约名称
+	//claimVersion      = "2.0.0"
+	// claimVersion = "1.0"
+	//claimByteCodePath     = "./chainmaker_config/claim-wasm-demo/rust-fact-2.0.0.wasm"
+
 	sdkConfigOrg1Client1Path = "./chainmaker_config/sdk_configs/sdk_config_org1_client1.yml"
 )
 
@@ -30,6 +36,16 @@ var queryParameter string
 // 定义合约查询的结果
 var queryResult *common.TxResponse
 
+// 定义一个字符串string转map的函数,用作gin框架gin.H的map类型参数
+func JsonstringToMap(str string) map[string]interface{} {
+	var tempMap = make(map[string]interface{})
+	err := json.Unmarshal([]byte(str), &tempMap)
+	if err != nil {
+		panic(err)
+
+	}
+	return tempMap
+}
 func main() {
 	//连接区块链
 	fmt.Println("====================== create client ======================")
@@ -39,17 +55,33 @@ func main() {
 	}
 	//创建一个服务
 	r := gin.Default()
-	//跨域
 	r.Use(cors.Default())
 
 	//检查这条长安链是否运行正常
-	r.GET("/contact/testChainClient", _testChainClient)
+	r.GET("/contact/testChainClient", func(context *gin.Context) {
+		result := chain.TestChainClientCheckNewBlockChainConfig()
+		context.JSON(http.StatusOK, gin.H{
+			"result": result,
+		})
+	})
 	//查询saleStock合约
 	r.GET("/salestockcontact/:_queryParameter", func(context *gin.Context) {
 		fmt.Println("====================== 查看数值 ======================")
 		queryParameter = context.Param("_queryParameter")
 		getContractResult := saleStockcontract.SaleStockEVMGet(client, queryParameter, true)
+
 		fmt.Printf("Byte resp: %+v\n", getContractResult)
+
+		//取出查询结果的对象的result属性
+		//getContractResultByte := queryResult.ContractResult.Result
+		//把字节数组转为为字符串
+		//getContractResultString := string(getContractResultByte)
+		//fmt.Printf("Byte resp: %+v\n", getContractResultString)
+
+		//定义一个Map，以便gin框架输出json数据结构
+		//var getContractResultMap = make(map[string]interface{})
+		//getContractResultMap = JsonstringToMap(getContractResultString)
+		//context.JSON(http.StatusOK, getContractResultMap)
 		context.JSON(http.StatusOK, gin.H{
 			"hash":           getContractResult[0],
 			"factory":        getContractResult[1],
@@ -67,7 +99,8 @@ func main() {
 
 	//前端给后端传递json
 	r.POST("/json", func(context *gin.Context) {
-
+		//request.body
+		//[]byte
 		data, _ := context.GetRawData()
 		var m map[string]interface{}
 		//包装为json数据[]byte
@@ -78,61 +111,10 @@ func main() {
 		//***上面代码为执行合约
 		context.JSON(http.StatusOK, m)
 	})
-	//上传证书图片(一张图片)
-	r.POST("uploadcercertimg", _uploadcertimg)
-	//上传产品核对图片（多张）
-	r.POST("uploadcheckimg", _uploadcheckimg)
 
-	err1 := r.Run("0.0.0.0:8080") // 监听并在8080上启动服务
+	err1 := r.Run() // 监听并在8080上启动服务
 	if err1 != nil {
 		// log.Fatalln(err)
 	}
 
-}
-
-// 检查链是否正常
-func _testChainClient(c *gin.Context) {
-	result := chain.TestChainClientCheckNewBlockChainConfig()
-	c.JSON(http.StatusOK, gin.H{
-		"result": result,
-	})
-}
-
-// 上传证书图片(一张图片)
-func _uploadcertimg(c *gin.Context) {
-
-	file, err := c.FormFile("file")
-	if err != nil {
-		fmt.Println("获取图片:", err)
-		return
-	}
-	// file.Size
-	// todo 修改上传图片存储路径
-	var commonPath = "./images/cert_img/"
-	dst := path.Join(commonPath, file.Filename)
-	err = c.SaveUploadedFile(file, dst)
-	if err != nil {
-		fmt.Println("upload error:", err)
-		return
-	}
-	// fmt.Println("upload success!")
-	c.JSON(200, gin.H{"msg": "证书图片上传成功"})
-}
-
-// 上传产品核对图片（多张）
-func _uploadcheckimg(c *gin.Context) {
-	form, err := c.MultipartForm()
-	if err != nil {
-		fmt.Println("get picture:", err)
-		return
-	}
-	var commonPath = "./images/check_img/"
-	files := form.File["pictures"]
-	for _, file := range files {
-		fmt.Println("文件名:", file.Filename)
-		dst := path.Join(commonPath, file.Filename)
-		c.SaveUploadedFile(file, dst)
-	}
-	// fmt.Println("upload success!")
-	c.JSON(200, gin.H{"msg": "产品核对图片上传成功"})
 }
