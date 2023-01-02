@@ -43,30 +43,33 @@ func main() {
 	r.Use(cors.Default())
 
 	//检查这条长安链是否运行正常
-	r.GET("/contact/testChainClient", _testChainClient)
+	r.GET("/chainclient/test", _testChainClient)
 	//查询saleStock合约
-	r.GET("/salestockcontact/:_queryParameter", func(context *gin.Context) {
+	r.GET("/salestockcontract/:_queryParameter", func(context *gin.Context) {
 		fmt.Println("====================== 查看数值 ======================")
 		queryParameter = context.Param("_queryParameter")
-		getContractResult := saleStockcontract.SaleStockEVMGet(client, queryParameter, true)
+		getContractResult, resp_txid, resp_txtimestamp, resp_txblockheight := saleStockcontract.SaleStockEVMGet(client, queryParameter, true)
 		fmt.Printf("Byte resp: %+v\n", getContractResult)
 		context.JSON(http.StatusOK, gin.H{
-			"hash":           getContractResult[0],
-			"factory":        getContractResult[1],
-			"style":          getContractResult[2],
-			"weight":         getContractResult[3],
-			"logo":           getContractResult[4],
-			"silver_content": getContractResult[5],
-			"cert_id":        getContractResult[6],
-			"cert_img":       getContractResult[7],
-			"check_img":      getContractResult[8],
-			"factory_add":    getContractResult[9],
-			"time":           getContractResult[10],
+			"hash":               getContractResult[0],
+			"factory":            getContractResult[1],
+			"style":              getContractResult[2],
+			"weight":             getContractResult[3],
+			"logo":               getContractResult[4],
+			"silver_content":     getContractResult[5],
+			"cert_id":            getContractResult[6],
+			"cert_img":           getContractResult[7],
+			"check_img":          getContractResult[8],
+			"factory_add":        getContractResult[9],
+			"time":               getContractResult[10],
+			"resp_txid":          resp_txid,
+			"resp_txtimestamp":   resp_txtimestamp,
+			"resp_txblockheight": resp_txblockheight,
 		})
 	})
 
 	//前端给后端传递json
-	r.POST("/json", func(context *gin.Context) {
+	r.POST("/invoke", func(context *gin.Context) {
 
 		data, _ := context.GetRawData()
 		var m map[string]interface{}
@@ -79,11 +82,11 @@ func main() {
 		context.JSON(http.StatusOK, m)
 	})
 	//上传证书图片(一张图片)
-	r.POST("uploadcercertimg", _uploadcertimg)
+	r.POST("uploadcertimg", _uploadcertimg)
 	//上传产品核对图片（多张）
 	r.POST("uploadcheckimg", _uploadcheckimg)
 
-	err1 := r.Run("0.0.0.0:8080") // 监听并在8080上启动服务
+	err1 := r.Run() // 监听并在8080上启动服务
 	if err1 != nil {
 		// log.Fatalln(err)
 	}
@@ -100,6 +103,10 @@ func _testChainClient(c *gin.Context) {
 
 // 上传证书图片(一张图片)
 func _uploadcertimg(c *gin.Context) {
+	//
+	msg := c.Param("data")
+	fmt.Println(msg)
+	//
 
 	file, err := c.FormFile("file")
 	if err != nil {
